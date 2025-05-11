@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Car
+  - Sign
+  - Tree
+  - Obstacle
+  - Audio
+  - Cloud
+  - Road
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Back
+    uniqueID: 417914143
+    locked: 0
+  - name: StraightRoad
+    uniqueID: 1789250253
+    locked: 0
+  - name: Road
+    uniqueID: 3985282821
+    locked: 0
+  - name: Trees
+    uniqueID: 3021796005
+    locked: 0
+  - name: Car
+    uniqueID: 1711350817
+    locked: 0
+  - name: Cloud
+    uniqueID: 1583374565
+    locked: 0
