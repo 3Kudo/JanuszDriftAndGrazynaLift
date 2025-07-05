@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8711550385467241623}
   - component: {fileID: 5299484732644402538}
   m_Layer: 0
-  m_Name: StraightRoad
+  m_Name: road_1
   m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
