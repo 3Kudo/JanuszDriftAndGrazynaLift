@@ -484,6 +484,8 @@ MonoBehaviour:
   previousTile: {fileID: 0}
   nextTile: {fileID: 0}
   curvature: 0.6
+  tilt: 0
+  road: 0
 --- !u!1 &4835115064911733819
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,7 +583,7 @@ GameObject:
   - component: {fileID: 8711550385467241623}
   - component: {fileID: 5299484732644402538}
   m_Layer: 0
-  m_Name: road_1
+  m_Name: Straig_Road
   m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -725,9 +727,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiles:
   - {fileID: 5806022153063491630}
+  - {fileID: 6052908853362580829, guid: 9941561764b1d474fac0dae6f9a2a306, type: 3}
   previousTile: {fileID: 0}
   nextTile: {fileID: 0}
   curvature: 0.6
+  tilt: 0
+  road: 0
 --- !u!1 &6394432977051230992
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEditor.VersionControl;
 using UnityEngine;
 
@@ -7,7 +8,21 @@ public class NewMapGenerator : MonoBehaviour
 {
     public GameObject[] tiles;
     public GameObject previousTile, nextTile;
-    public float curvature;
+    public float curvature, tilt;
+    public enum roadType
+    {
+        straight,
+        turn,
+        smallIntersection,
+        bigIntersection
+    };
+
+    public roadType road;
+
+    private void Start()
+    {
+        
+    }
 
     public void GenerateNewTile()
     {
@@ -28,11 +43,16 @@ public class NewMapGenerator : MonoBehaviour
         }*/
 
         Vector2 tileVector = firstTile.transform.position;
-        tileVector.y += 10.5f;
+        tileVector.y += 10f;
         Quaternion quaternion = new Quaternion();
-        //todo: tutaj bedzie trzeba zmienic na zasadzie posiadania zakretow a wiec bedzie trzeba pogadac z klaudia;
-        GameObject newTile = Instantiate(tiles[0], tileVector, quaternion);
+        int tileToGenerate = Random.Range(0, 2);
+        
+
+
+
+        GameObject newTile = Instantiate(tiles[tileToGenerate], tileVector, quaternion);
         newTile.GetComponent<NewMapGenerator>().previousTile = firstTile;
         firstTile.GetComponent<NewMapGenerator>().nextTile = newTile;
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
     }
 }
